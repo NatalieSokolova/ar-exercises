@@ -24,3 +24,4 @@ class Store
   validates :womens_apparel, presence: true, unless: ->(store){store.mens_apparel.present?}
 end
 
+@new_store_name = Store.create(name: gets.chomp)
